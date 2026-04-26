@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # Скачиваем образ
-      - run: docker pull ${{ env.APP_IMAGE_NAME }}:latest
+      - run: docker pull hexletcomponents/devops-example-app
       # Тегируем, тег в образе совпадает с тегом git-репозитория
       # github.ref_name - в данном случае имя тега
       - run: docker tag ${{ env.APP_IMAGE_NAME }}:latest ${{ env.APP_IMAGE_NAME }}:${{ github.ref_name }}
