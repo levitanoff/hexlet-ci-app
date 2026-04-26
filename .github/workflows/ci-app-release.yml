@@ -6,7 +6,7 @@ on:
       - v* # только теги начинающиеся с v: v1, v2, v5
 
 env:
-  APP_IMAGE_NAME: hexletcomponents/devops-example-app
+  APP_IMAGE_NAME: levitanoff/devops-example-app
 
 jobs:
   docker:
